@@ -1,6 +1,7 @@
 node{
      stage('git clone'){
        bat 'where python'
+       git 'https://github.com/Manikanta937/JenkinsJob.git'
      }
      stage('Test'){
        bat 'python --version'
