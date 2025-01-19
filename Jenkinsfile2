@@ -3,6 +3,7 @@ pipeline{
   stages{
          stage('git'){
            steps{
+                 git 'https://github.com/Manikanta937/JenkinsJob.git'
                  bat 'where python'
            }
          }
@@ -13,7 +14,7 @@ pipeline{
          }
          stage('Execute'){
            steps{
-                 bat 'python dict.py'
+                 bat 'python calc.py'
            }
          }
   }
