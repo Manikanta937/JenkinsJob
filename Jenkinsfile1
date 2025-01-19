@@ -1,0 +1,12 @@
+node{
+     stage('git clone'){
+       bat 'where python'
+     }
+     stage('Test'){
+       bat 'python --version'
+     }
+     stage('Execute'){
+       bat 'python dict.py'
+     }
+}
+  
