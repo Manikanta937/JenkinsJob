@@ -1,0 +1,20 @@
+pipeline{
+  agent any
+  stages{
+         stage('git'){
+           steps{
+                 bat 'where python'
+           }
+         }
+         stage('Test'){
+           steps{
+                 bat 'python --version'
+           }
+         }
+         stage('Execute'){
+           steps{
+                 bat 'python dict.py'
+           }
+         }
+  }
+}
