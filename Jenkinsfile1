@@ -7,7 +7,7 @@ node{
        bat 'python --version'
      }
      stage('Execute'){
-       bat 'python dict.py'
+       bat 'python calc.py'
      }
 }
   
